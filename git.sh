@@ -1,4 +1,4 @@
 #!/bin/bash 
-git add .
+git add ./*.java
 git commit -m "$1"
 git push origin master
