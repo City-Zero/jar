@@ -26,20 +26,19 @@ public class MyPoint {
 		s = Math.pow((Math.pow((a.y-this.y),2) + Math.pow((a.x-this.x),2)),0.5);
 		return s;
 	}
+
+    double distance(double x,double y){
+        double s;
+		s = Math.pow((Math.pow((y-this.y),2) + Math.pow((x-this.x),2)),0.5);
+        return s;
+    }
 	
-	/**
-	 * @param args
-	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		MyPoint a = new MyPoint();
 		MyPoint b = new MyPoint(10,30.5);
-		double s;
-		s= a.x_get();
-	//	System.out.println(s);
-		System.out.println();
 		
 		System.out.println(b.distance(a));
+		System.out.println(b.distance(10,20));
 	}
 
 }
