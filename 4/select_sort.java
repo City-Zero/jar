@@ -40,9 +40,10 @@ public class select_sort {
             list[i] = ra.nextDouble();
         }
         sel_so(list);
-        display(list);
+//        display(list);
         Arrays.sort(list);
-        System.out.println();
+//        System.out.println();
         display(list);
+
     }
 }
