@@ -2,8 +2,7 @@
 
 for i in `ls ~/IdeaProjects/`
 do
-    c="/home/lyt/program/jar/$i"
-    mkdir $c
-    d="/home/lyt/IdeaProjects/$i/src/*"
-    cp $d $c
+    mkdir /home/lyt/program/jar/$i
+    cp /home/lyt/IdeaProjects/$i/src/* /home/lyt/program/jar/$i/
 done
+sh git.sh `date |awk '{print $1$2$3}'`
