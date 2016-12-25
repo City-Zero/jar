@@ -10,7 +10,7 @@ public class t19_3 {
             DataInputStream input = new DataInputStream(new FileInputStream("E19_3.dat"));
             int s,n;
             s = 0;
-            while((n = (int)input.read()) != -1){
+            while((n = input.readInt()) != -1){
                 System.out.println(n);
                 s += n;
             }
