@@ -3,7 +3,7 @@
 for i in `locate '/home/lyt/IdeaProjects/*.java'`
 do
     a=`echo ${i%/*}`
-    a=`echo ${a:10}`
+    a=`echo ${a:23}`
     mkdir -p /home/lyt/program/jar/$a
     cp $i /home/lyt/program/jar/$a/
 done
